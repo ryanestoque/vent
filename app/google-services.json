@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "824529230764",
+    "project_id": "vent-53754",
+    "storage_bucket": "vent-53754.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:824529230764:android:4532ea7436ec329157f809",
+        "android_client_info": {
+          "package_name": "com.example.vent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "824529230764-nre4dn6loqd4al02dla66ensnnefcdue.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.vent",
+            "certificate_hash": "5288cf220d2e0c306d6e7b3b38f8953427fe74b2"
+          }
+        },
+        {
+          "client_id": "824529230764-bneeel2lfg9j4id65q6qk54vccpvspa9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAatbpzB7uxlueMWBoy9ntVWXfNaMx6v88"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "824529230764-bneeel2lfg9j4id65q6qk54vccpvspa9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

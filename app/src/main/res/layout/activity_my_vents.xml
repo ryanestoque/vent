@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/myVents"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0a0a0a"
+    >
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        >
+
+        <TextView
+            android:id="@+id/headerLogo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="My Vents"
+            android:fontFamily="@font/satoshi_bold"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/baseline_favorite_24"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"
+        android:layout_marginTop="0dp"
+        android:clipToPadding="false"
+        android:paddingHorizontal="16dp" />
+
+    <TextView
+        android:id="@+id/emptyMyView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="No vents yet"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/satoshi_regular"
+        android:textSize="24sp"
+        android:visibility="visible"
+        />
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:background="@color/black"
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bottom_nav_menu"
+        android:layout_alignParentBottom="true"
+        app:labelVisibilityMode="unlabeled"
+        app:itemIconTint="@color/white"
+        app:itemActiveIndicatorStyle="@style/Theme.BottomNavigationView.ActiveIndicator"
+        />
+</RelativeLayout>
+

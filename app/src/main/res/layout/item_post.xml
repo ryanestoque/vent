@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@drawable/button1"
+    android:layout_marginBottom="8dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/postHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        >
+
+        <TextView
+            android:id="@+id/anonUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fafafa"
+            android:fontFamily="@font/satoshi_medium"
+            android:text="AnonUser"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:layout_marginBottom="4dp"
+            />
+
+        <ImageView
+            android:id="@+id/postMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_more_horiz_24"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/postDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="May 15, 2025"
+        android:layout_below="@id/postHeader"
+        android:fontFamily="@font/satoshi_regular"
+        android:textColor="#aaaaaa"
+        android:textSize="12sp"
+        />
+
+    <TextView
+        android:id="@+id/postContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/postDate"
+        android:textColor="#fafafa"
+        android:fontFamily="@font/satoshi_regular"
+        android:text="Hi, this is my first post for this daily vent app! See you tomorrow!"
+        android:textSize="28sp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="16dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/postFeels"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/postContent"
+        android:orientation="horizontal"
+        android:gravity="center|start"
+        >
+
+        <ImageView
+            android:id="@+id/feelBtn"
+            android:layout_height="28dp"
+            android:layout_width="28dp"
+            android:src="@drawable/outline_favorite_border_24"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/feelCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="69 feels"
+            android:fontFamily="@font/satoshi_regular"
+            android:textColor="@color/white"
+            android:layout_marginStart="8dp"
+            android:textSize="14sp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

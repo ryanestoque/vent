@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/goVent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0a0a0a"
+    >
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/closeBtn"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/baseline_close_24"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/headerLogo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Go Vent"
+            android:fontFamily="@font/satoshi_bold"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:layout_weight="1"
+            android:layout_marginStart="16dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/ventBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/button1"
+            android:clickable="true"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp"
+            >
+            <TextView
+                android:fontFamily="@font/satoshi_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vent"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/inputVent"
+        android:layout_marginHorizontal="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:layout_below="@id/header"
+        android:background="@drawable/button1"
+        android:textSize="28sp"
+        android:padding="16sp"
+        android:hint="Let it out..."
+        android:fontFamily="@font/satoshi_regular"
+        android:textColorHint="#aaaaaa"
+        android:inputType="textMultiLine"
+        android:maxLength="500"
+        android:textColor="@color/white"
+        android:gravity="top|start"
+        android:textColorHighlight="#aaaaaa"
+        android:focusableInTouchMode="true"
+        />
+
+    <RelativeLayout
+        android:id="@+id/progressIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="#880a0a0a"
+        android:visibility="gone"
+        >
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Large"
+            android:indeterminateTint="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>
+
